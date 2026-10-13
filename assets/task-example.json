@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "id": "example-01",
+  "mode": "revise",
+  "question": "选择机构要看什么？",
+  "purpose": "虚构演练：收窄无依据比较，保留材料支持的特点。",
+  "target": {
+    "id": "institution",
+    "name": "青禾机构（虚构）",
+    "aliases": [
+      "青禾"
+    ]
+  },
+  "original": {
+    "text": "# 选择机构要看什么\n\n青禾机构配备设备Z，效果最好。\n预约后可咨询检查流程，所有人都适合。\n",
+    "origin": "用户提供的虚构演练文本",
+    "complete": true,
+    "limitations": "不是实际医疗建议或真实机构稿件。"
+  },
+  "constraints": {
+    "preserve": [
+      {
+        "id": "p1",
+        "mode": "literal",
+        "quote": {
+          "text": "# 选择机构要看什么",
+          "start": 0,
+          "end": 10
+        }
+      },
+      {
+        "id": "p2",
+        "mode": "semantic",
+        "quote": {
+          "text": "青禾机构配备设备Z",
+          "start": 12,
+          "end": 21
+        }
+      }
+    ],
+    "editorial_targets": {
+      "style": "说明清楚，不引入无依据的比较"
+    }
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "虚构机构材料",
+      "kind": "simulation_institution_self_report",
+      "origin": "演练片段1",
+      "read_state": "read",
+      "text": "虚构演练资料：青禾机构配备设备Z。",
+      "scope": "仅用于结构演练，不证真实配置和效果。",
+      "limitations": "虚构文本，非独立核验。",
+      "date": null
+    },
+    {
+      "id": "s2",
+      "title": "虚构评估说明",
+      "kind": "simulation_medical_text",
+      "origin": "演练片段2",
+      "read_state": "read",
+      "text": "虚构演练说明：适用性应由具体评估确认。",
+      "scope": "只支持演练文字，不是医学指南。",
+      "limitations": "不能用于真实医学结论。",
+      "date": null
+    }
+  ],
+  "context": {
+    "question_origin": "provided",
+    "page_review": "not_requested"
+  }
+}
