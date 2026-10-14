@@ -2,7 +2,7 @@
 
 ## 四种依据分开
 
-**事实支持**：具体原句与实际材料按主体、日期和范围对照。没有材料=unverified，材料相反=conflicting，材料只支持较弱表述=partially_supported。来源有标题/URL但没读内容不算支持。
+**事实支持**：具体原句与实际材料按主体、日期和范围对照。没有材料=not_verifiable（无法核实，不等于错误），材料相反=conflicting，材料只支持较弱表述=partially_supported。来源有标题/URL但没读内容不算支持。
 
 **问题覆盖**：从本次主问题拆出读者需要，找原稿中的回应，说明covered/partial/missing/not_assessed。每个必要点登记reason、依据与原文。医学必要点必须有适用的已读来源，否则标not_assessed并明确专业待核对，编辑建议可用明确规则和目标关系；不以模型偏好强制固定体裁/篇幅。
 
